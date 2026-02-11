@@ -1,10 +1,10 @@
 # notification-package
 
-Laravel package that generates PDF documents from stored templates and entity data.
+Plugin Laravel pour generer des documents PDF a partir de templates stockes en base et de donnees d'entites.
 
-## Installation
+## Installation du plugin
 
-Add the VCS repository and require the package:
+1) Ajouter le repo VCS et le package dans `composer.json`:
 
 ```json
 "repositories": [
@@ -14,6 +14,8 @@ Add the VCS repository and require the package:
   "saba/templategenerator": "dev-main"
 }
 ```
+
+2) Installer les dependances et lancer les migrations:
 
 ```bash
 composer update
