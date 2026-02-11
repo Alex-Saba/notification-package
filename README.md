@@ -1,8 +1,10 @@
-# TemplateGenerator
+# notification-package
 
 Laravel package that generates PDF documents from stored templates and entity data.
 
-## Installation (VCS repo)
+## Installation
+
+Add the VCS repository and require the package:
 
 ```json
 "repositories": [
@@ -29,4 +31,15 @@ public function generate(TemplateGeneratorContract $generator)
         "App\\Models\\Client" => 5,
     ]);
 }
+```
+
+## Entities payload
+
+The `entities` argument must be an array keyed by model FQCN:
+
+```php
+[
+    "App\\Models\\Client" => 5,
+    "App\\Models\\Societe" => 12
+]
 ```
