@@ -1,0 +1,27 @@
+{
+  "name": "saba/templategenerator",
+  "type": "library",
+  "description": "Template generator package for Laravel.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/contracts": "^12.0",
+    "illuminate/database": "^12.0",
+    "illuminate/support": "^12.0",
+    "barryvdh/laravel-dompdf": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TemplateGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TemplateGenerator\\TemplateGeneratorServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
